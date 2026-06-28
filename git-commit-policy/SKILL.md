@@ -2,7 +2,7 @@
 
 name: git-commit-policy
 title: Git Commit Policy
-description: Rules for creating commits after implementation work.
+description: "Create clean git commits after implementation work. Use when the user asks to commit, prepare a commit, inspect staged changes, write a commit message, or decide whether the current work is ready to commit."
 category: workflow
 status: active
 version: 2.1
@@ -119,4 +119,3 @@ After committing, report:
 * Validation results.
 * Commit hash.
 * Commit message.
-
