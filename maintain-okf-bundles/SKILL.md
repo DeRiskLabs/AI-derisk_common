@@ -2,7 +2,7 @@
 name: maintain-okf-bundles
 title: Maintain OKF Bundles
 description: Use when creating, editing, validating, or reorganizing a strict Google Open Knowledge Format v0.1 compatible Markdown bundle. Enforces required index.md and log.md files, required YAML frontmatter, standard Markdown links, no wikilinks, exact ledger entries, and compatibility with official OKF consumers.
-category: knowledge-management
+category: workflow
 status: active
 version: 0.1
 priority: REQUIRED
@@ -29,8 +29,17 @@ Use this skill for Google Open Knowledge Format v0.1 compatible Markdown bundles
 
 Source of truth: <https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md>.
 
-Maintain a strict OKF-compatible bundle. The official spec is the compatibility floor;
-this skill enforces the stricter bundle rules below.
+**What OKF is.** Open Knowledge Format (OKF) v0.1, from Google Cloud Platform's
+`knowledge-catalog`, represents knowledge as a directory of Markdown files with YAML
+frontmatter — human-readable and agent-parseable without special tooling. In the spec, only
+`type` is mandatory per document (`title`, `description`, `resource`, `tags`, `timestamp` are
+recommended); `index.md` (a directory listing) and `log.md` (a dated change history) are
+optional; links are bundle-relative (leading `/`) or relative Markdown; consumers must tolerate
+broken links and unknown `type`s.
+
+Maintain a strict OKF-compatible bundle. The official spec is the compatibility floor; this
+skill enforces the stricter bundle rules below — it *requires* `index.md` and `log.md`, requires
+more frontmatter fields, and forbids wikilinks.
 
 
 ## Required Structure

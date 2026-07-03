@@ -1,19 +1,27 @@
 ---
-
 name: git-commit-policy
 title: Git Commit Policy
-description: "Create clean git commits after implementation work. Use when the user asks to commit, prepare a commit, inspect staged changes, write a commit message, or decide whether the current work is ready to commit."
+description: "Commit implementation work continuously - create a clean commit after each completed, validated logical unit, without waiting to be asked. Use whenever code or artifacts change, a unit of work completes, or the user asks about committing, staging, or commit messages."
 category: workflow
 status: active
-version: 2.1
+version: 2.2
 priority: REQUIRED
 user_invocable: true
-last_reviewed_at: 2026-06-05
-
+last_reviewed_at: "2026-07-03"
 ---
 
 
 # Git Commit Policy
+
+
+## Commit Continuously
+
+Committing is the default, not a step you wait to be asked for. As soon as a logical unit of
+work is complete and validated, commit it — then move on. Do not batch many completed units
+into one end-of-task commit, and never leave finished work sitting uncommitted until the user
+prompts you. If a coherent unit is done, commit before continuing to the next. An
+always-committed working tree is the expected state; being asked to commit means something was
+already left too long.
 
 
 ## Repository State Check
