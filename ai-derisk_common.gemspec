@@ -8,8 +8,9 @@ Gem::Specification.new do |spec|
 
   spec.summary     = 'Common workflow and knowledge-structure skills for AI coding agents.'
   spec.description = 'The derisk_common skill collection: SKILL.md documents defining ' \
-                     'agent behaviour such as commit policy and portable OKF bundle ' \
-                     'maintenance. Data-only gem; nothing to require.'
+                     'agent behaviour such as commit policy, portable OKF bundle ' \
+                     'maintenance, and OKF wiki source/chat ingestion. Data-only gem; ' \
+                     'nothing to require.'
   spec.homepage    = 'https://github.com/DeriskLabs/AI-derisk_common'
   spec.license     = 'MIT'
 
